@@ -1,0 +1,12 @@
+header {
+    background-color: blue;
+}
+header a{
+    color: brown;
+}
+
+#header a {
+    color: cornflowerblue;
+    font-size: 2em;
+    font-size: 2rem;
+}
