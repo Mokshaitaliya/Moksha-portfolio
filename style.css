@@ -1,52 +1,35 @@
 
-.header{
-    background-color:lightblue;
-    
-  
-}
- ul{
-    list-style-type: none;
-    display: flex;
-    flex: 1,1,auto;
-    flex-direction: row;
-    flex-wrap: nowrap; 
-    justify-content: space-between;
-    align-items: center;
-    align-content: normal;
-   /* align-content: space-around;*/
-} 
-   
-.header-nav-white 
-.navbar-brand {
-    color: black;
-    font: 23px;
-    margin: 0px,16px,0px,0px;
-    padding: 0px,0px;
+#blogs{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-.flex-container {
-    width: 100%;
+#blogs > .blog{
+height: 400px;
+width: 300px;
+display: flex;
+flex-direction: column;
+/* justify-content: space-between; */
 
-    flex-direction: row ;
-    display: flex;
-    justify-content:center;
-    flex-wrap: wrap;
-  }
-  a{
-    color: #007bff;
-    text-decoration: none;
-    background-color: transparent;
-  }
-  .flex-container > div {
-    background-color: DodgerBlue;
+}
 
-    color: white;
-    width: 100px;
-    margin: 50px;
-    padding: 50px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
-  }
-    
-  
+#blogs > .blog > div{
+  flex: 1;
+  overflow: hidden;
+}
+#blogs > .blog > div:nth-child(2){
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+
+#blogs > .blog img{
+  height: 100%;
+  width: 100%;
+}
