@@ -1,4 +1,4 @@
-
+/* 
 #blogs{
   display: flex;
   flex-wrap: wrap;
@@ -12,9 +12,9 @@ display: flex;
 flex-direction: column;
 /* justify-content: space-between; */
 
-}
 
-#blogs > .blog > div{
+
+/* #blogs > .blog > div{
   flex: 1;
   overflow: hidden;
 }
@@ -32,6 +32,8 @@ h1, h2, h3, h4, h5, h6{
 #blogs > .blog img{
   height: 100%;
   width: 100%;
+  /* vertical-align: middle;
+  border-style: none; */
 }
 
 /* index1.html */
@@ -86,3 +88,196 @@ h1, h2, h3, h4, h5, h6{
     justify-content: space-between;
     padding: 0.5rem 1rem
 } */
+
+
+#blogs > .blog{
+  font-size: larger;
+  font-family: sans-serif;
+  height: 500px;
+  width: 2500px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+}
+
+.btn
+{
+  padding: 10px 5px;
+  border-radius: 16px;
+  background-color: aquamarine;
+  border: solid 0.7px;
+}
+/* .about-left p {
+  width: 470px;
+  max-width: 100%;
+  font-size: 15px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  justify-content: flex-start;
+  align-content: center;
+}
+p{
+  flex-wrap: wrap;
+  
+}
+
+#blogs {
+  display: flex;
+  height: 500px;
+  width: 1000px;
+  flex-wrap: wrap;
+}
+#blogs > .blog > div {
+  flex: 1; 
+}
+#blogs > .blog > div :nth-child(2){
+  display: flex;
+
+}
+/* #blogs > .blog img{ */
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  justify-content: space-evenly;
+} 
+
+
+
+
+
+
+#blogs1 > .blog1{
+  font-family: sans-serif;
+  height: 120px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  background-color: whitesmoke;
+}
+
+h1,h2,h3,h4,h5,h6{
+  text-align: center;
+} */
+
+#projects{
+  display: grid;
+  grid-template-rows: 100px 100px;
+  grid-template-columns: 100px 100px 100px;
+  gap: 1rem;
+}
+
+#projects > .project
+{
+  background-color: red;
+}
+
+#projects > .project :nth-child(2)
+{
+   grid-column: span 2;
+   
+}
+
+@media (min-width: 768px){
+.col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}}
+
+
+@media print{
+  div.box{
+    background-color: yellow;
+  }
+} */ */
+
+
+/* #projects{
+    display: grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    gap: 1rem;
+    /* align-content: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* justify-items: center; */
+  }
+  /* #projects > .project{
+      background-color: lightseagreen;
+  } */
+  /* #projects > .project:nth-child(2){
+      /* grid-row: span 2; */
+        /* grid-column: span 2;   */
+        /* grid-area: span 2 / span 2; */
+  }  */
+  body{
+      font-size: 12px;
+      display: grid;
+      grid-template: 
+      "header header"
+      "aside main"
+      "footer footer";
+  } 
+  
+  #blogs{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+  
+  #blogs > .blog{
+  height: 400px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  
+  }
+  
+  #blogs > .blog > div{
+      flex: 1;
+      overflow: hidden;
+  }
+  #blogs > .blog > div:nth-child(2){
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+  
+  h1, h2, h3, h4, h5, h6{
+      margin: 0;
+      padding: 0;
+  }
+  
+  #blogs > .blog img{
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+  }
+  
+  #row{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-bottom: 70px;
+      margin-top: 70px;
+  }
+  #row > .rows{
+      height: 400px;
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      
+  }
+  
+  .btn{
+      padding: 10px 5px;
+      border-radius: 17px ;
+      background-color: aqua;
+      border: solid 0.7px;
+  }
